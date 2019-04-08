@@ -1,60 +1,23 @@
 #language: pt
-# encoding: utf-8
-Funcionalidade: Prova Yaman Java BDD
+Funcionalidade: Prova Yaman Ruby BDD
 
-#***************************************************Positivos*************************************************************************
-@cadastro @positivo 
+ #***************************************************Positivos*************************************************************************
+
 Esquema do Cenario: Cadastro
     Dado que foi acessado o site "<site>"
-    Quando inserir o "<nome>", o "<email>" e a "<senha>" valida
-    Entao devo clicar em Cadastrar e validar a mensagem "<mensagem>"
+    Quando 
+    Ent„o  
     Exemplos:
-        |site                                            |nome     |email             |senha       |mensagem                     |
-        |https://srbarriga.herokuapp.com/cadastro        |yamano   |prova9@yaman.com  |123456789   |Usu√°rio inserido com sucesso|
+        |site                                     |       
+        |https://srbarriga.herokuapp.com/cadastro |
 
-@login @positivo 
-Esquema do Cenario: Login
-    Dado que foi acessado o site "<site>"
-    Quando inserir o "<email>" e a "<senha>" previamente cadastradas
-    E clicar em Entrar 
-    E validar a mensagem "<mensagem>"
-    Entao clicar em Sair e validar o logout
-    Exemplos:
-        |site                                          |email            |senha       |mensagem          |
-        |https://srbarriga.herokuapp.com/login         |prova8@yaman.com |123456789   |Bem vindo, yamano!|
+#implementar cen·rio de Login
 
-@conta @positivo 
-Esquema do Cenario: Conta
-    Dado que foi acessado o site "<site>"
-    Quando inserir o "<email>" e a "<senha>" previamente cadastradas 
-    E clicar em Entrar 
-    E clicar no menu Contas e no submenu Adicionar
-    E inserir um valor no campo "<nome>" e clicar em Salvar
-    Entao validar a mensagem "<mensagem>" e clicar em Sair
-    Exemplos:
-        |site                                            |email            |senha       |nome        |mensagem                     |
-        |https://srbarriga.herokuapp.com/login           |prova8@yaman.com  |123456789  |Nova Conta  |Conta adicionada com sucesso!|
+#implementar cen·rio de Conta
 
-
+ 
  #***************************************************Negativos*************************************************************************
 
-@cadastro @negativo 
-Esquema do Cenario: Login
-    Dado que foi acessado o site "<site>"
-    Quando inserir o "<nome>", o "<email>" e a "<senha>" valida
-    Entao devo clicar em Cadastrar e validar a mensagem de erro "<mensagem>"
-    Exemplos:
-        |site                                            |nome     |email            |senha       |mensagem                      |
-        |https://srbarriga.herokuapp.com/cadastro        |yamano2  |prova2@yaman.com |123456789   |Endere√ßo de email j√° utilizado|
+#implementar cen·rio negativo de Cadastro
 
-@conta @negativo
-Esquema do Cenario: Conta
-    Dado que foi acessado o site "<site>"
-    Quando inserir o "<email>" e a "<senha>" previamente cadastradas
-    E clicar em Entrar 
-    E clicar no menu Contas e no submenu Adicionar
-    E inserir um valor no campo "<nome>" e clicar em Salvar
-    Entao validar a mensagem "<mensagem>" e clicar em Sair
-    Exemplos:
-        |site                                      |email             |senha       |nome        |mensagem                           |
-        |https://srbarriga.herokuapp.com/login     |prova2@yaman.com  |123456789   |Nova Conta  |J√° existe uma conta com esse nome!|
+#implementar cen·rio negativo de Conta
