@@ -21,8 +21,7 @@ public class cadastro_page {
 	private static String msg_sucess    = "//div[@class=\"alert alert-success\"]";
 	private static String msg_error     = "//div[@class=\"alert alert-danger\"]";
 
-	public void acessarUrlCadastro() {
-		String url = "https://srbarriga.herokuapp.com/cadastro";
+	public void acessarUrl(String url) {
 		this.driver.get(url);
 	}
 

@@ -18,12 +18,11 @@ public class prova_steps {
 
 	@Dado("^que foi acessado o site \"([^\"]*)\"$")
 	public void que_foi_acessado_o_site(String arg1) throws Exception {
-		
+		cadastroPage.acessarUrl(arg1);
 	}
 
 	@Quando("^inserir o \"([^\"]*)\", o \"([^\"]*)\" e a \"([^\"]*)\" valida$")
-	public void clicar_na_aba_Novo_Usuario_e_inserir_o_o_e_a_valida(String arg1, String arg2, String arg3)
-			throws Exception {
+	public void inserir_o_o_e_a_valida(String arg1, String arg2, String arg3) throws Exception {
 
 	}
 
@@ -44,8 +43,7 @@ public class prova_steps {
 	}
 
 	@Quando("^inserir o \"([^\"]*)\" e a \"([^\"]*)\" previamente cadastradas$")
-	public void clicar_na_aba_Login_e_inserir_o_e_a_previamente_cadastradas(String arg1, String arg2) throws Exception {
-		
+	public void inserir_o_e_a_previamente_cadastradas(String arg1, String arg2) throws Exception {
 
 	}
 
@@ -66,7 +64,6 @@ public class prova_steps {
 
 	@Quando("^clicar no menu Contas e no submenu Adicionar$")
 	public void clicar_no_menu_Contas_e_no_submenu_Adicionar() throws Exception {
-		
 
 	}
 
