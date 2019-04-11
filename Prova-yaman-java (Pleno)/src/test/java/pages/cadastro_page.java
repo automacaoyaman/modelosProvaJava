@@ -14,8 +14,7 @@ public class cadastro_page {
 	private static String inp_nome      = "nome";
 	
 
-	public void acessarUrlCadastro() {
-		String url = "https://srbarriga.herokuapp.com/cadastro";
+	public void acessarUrlCadastro(String url) {
 		this.driver.get(url);
 	}
 
